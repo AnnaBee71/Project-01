@@ -17,3 +17,44 @@
 
 */
 
+
+VAR HEALTH = 20
+
+Local Convenience Store
+
+Your current health is, be sure to make good choices {HEALTH}
+
+-> Store
+
+=== Store ===
+
++[enter store]
+    You have now entered the store.  ->Store
+
++[enter isles]
+    Which isle do you want to enter?-> Store
+
++[get shopping cart]
+    you grab a shopping cart -> Store
+
++[enter checkout]
+    There are three different checkoutlines filled with people who want to get home.-> Store
+
++[enter bathroom]
+    You look in the mirror and leave.-> Store
+
++[enter store pharmacy]
+    Here you can buy prescription medicine and healthcare items.-> Store
+
++[exit store]
+    You have left the store. The parking lot is crowded and many people are entering and leaving the store.-> Store
+
++[steal something]
+    Task failed, someones grandma saw you. She scolded you and hit you with her bag. -> hurt
+== hurt 
+~ HEALTH = HEALTH -5
+Your health is now {HEALTH} -> Store
+
+
+
+
